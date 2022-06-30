@@ -17,7 +17,7 @@ export default class Image {
   // Preview = Image in gallery
   generatePreview() {
     let image = `
-      <img src="./assets/${this.photographerId}/${this.image}" alt="${this.generateTitle()}">
+      <img src="https://claire-lavigne.github.io/ClaireLavigne_6_09122020/assets/${this.photographerId}/${this.image}" alt="${this.generateTitle()}">
       `;
     return image;
   }
