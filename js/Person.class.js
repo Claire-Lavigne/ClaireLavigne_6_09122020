@@ -14,7 +14,7 @@ export default class Photographer {
     return `
     <article class="${this.generateTagsClass()}">
       <a href="./photographer.html?id=${this.id}" aria-label="${this.name}">
-        <img src="./assets/Photographers_ID_Photos/${this.portrait}" alt="">
+        <img src="https://claire-lavigne.github.io/ClaireLavigne_6_09122020/assets/Photographers_ID_Photos/${this.portrait}" alt="">
         <h2>${this.name}</h2>
       </a>
       <div>
