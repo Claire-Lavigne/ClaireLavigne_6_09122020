@@ -18,7 +18,7 @@ export default class Video {
   generatePreview() {
     let title = this.video.slice(0, -3) + 'jpg';
     let image = `
-      <img src="./assets/${this.photographerId}/${title}" alt="${this.generateTitle()}">
+      <img src="https://claire-lavigne.github.io/ClaireLavigne_6_09122020/assets/${this.photographerId}/${title}" alt="${this.generateTitle()}">
     `;
     return image;
   }
@@ -27,7 +27,7 @@ export default class Video {
   generateView() {
     let video = `
       <video controls>
-        <source src="./assets/${this.photographerId}/${this.video}" type='video/mp4' />
+        <source src="https://claire-lavigne.github.io/ClaireLavigne_6_09122020/assets/${this.photographerId}/${this.video}" type='video/mp4' />
         Your browser does not support the video tag.
       </video>
     `;
