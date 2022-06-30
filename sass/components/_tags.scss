@@ -1,0 +1,19 @@
+.tag {
+  color: $clr-primary;
+  background: white;
+  border: 1px solid $clr-secondary;
+  border-radius: 11px;
+  padding: 0 0.5em;
+  margin: 2px;
+  font-size: 0.75em; /* 12px */
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  &:hover,
+  &:focus
+  //active + visited
+  {
+    color: white;
+    background: $clr-primary;
+  }
+}

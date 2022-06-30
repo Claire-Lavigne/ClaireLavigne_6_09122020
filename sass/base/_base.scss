@@ -1,3 +1,64 @@
-html, body, *, *:before, *:after {
+html,
+body,
+*,
+*:before,
+*:after {
   font-family: $ff-base;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  margin: auto;
+  max-width: 1500px;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+#introduction h1 {
+  color: $clr-primary;
+  z-index: 2;
+  font-size: 0.875em; /* 14px */
+  position: fixed;
+  top: 15px;
+  right: 16px;
+  padding-top: 16px;
+  @include for-desktop-up {
+    font-size: 2.25em; /* 36px */
+    padding-top: 10px;
+    left: 70%;
+    right: unset;
+  }
+}
+
+section,
+#photographer > div {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10em;
+  @include for-tablets-up {
+    margin: 2em;
+    margin-top: 10em;
+  }
+  @include for-desktop-up {
+    margin-top: 5em;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+*[aria-hidden="true"] {
+  pointer-events: none;
 }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FishEye</title>
+  <link rel="icon" href="./assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./public/css/prefixed/style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"><img src="./assets/logo.svg" alt="Fisheye Home page"></a>
+  </header>
+
+  <main id="photographer">
+    <div id="photographer-infos">
+    </div>
+    <div id="photographer-pix">
+      <label for="order_by">Trier par</label>
+      <select id="order_by" class="dropdown btn">
+        <option class="dropdown-option" id="popular" value="popular">Popularité</option>
+        <option class="dropdown-option" id="date" value="date">Date</option>
+        <option class="dropdown-option" id="title" value="title">Titre</option>
+      </select>
+
+      <div class="gallery-wrapper"></div>
+
+      <div class="total">
+        <div class="totalLikes"></div>
+        <i aria-label="likes">❤</i>
+        <div class="totalPrice"></div>
+      </div>
+    </div>
+  </main>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="image closeup view"></div>
+
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" title="Close contact form">
+        <img class="icon-close" src="./assets/cross.png" alt="icon close"></button>
+      <div class="modal-body">
+        <h1 class="modal-title">Contactez-moi </h1>
+        <form action="photographer.html" method="post">
+          <div class="formData" data-error="Votre prénom doit contenir au moins 2 lettres">
+            <label for="first_name">Prénom</label><br>
+            <input id="first_name" type="text" name="prénom" required aria-required="true"/>
+          </div>
+          <div class="formData" data-error="Votre nom doit contenir au moins 2 lettres">
+            <label for="last_name">Nom</label><br>
+            <input id="last_name" type="text" name="nom" required aria-required="true" />
+          </div>
+          <div class="formData" data-error="Votre email est invalide">
+            <label for="email">Email</label><br>
+            <input id="email" type="email" name="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+              required aria-required="true" />
+          </div>
+          <div class="formData" data-error="Votre message est trop court">
+            <label for="your_message">Votre Message</label><br>
+            <input id="your_message" type="text" name="msg" required aria-required="true" />
+          </div>
+          <input class="btn" type="submit" value="Envoyer" title="send" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/photographer.js"></script>
+</body>
+
+</html>

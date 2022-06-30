@@ -1,8 +1,8 @@
-button {
+.btn {
   color: white;
   background: $clr-primary;
   width: 170px;
-  height: 69px;
+  height: 56px;
   border-radius: 5px;
   padding: 1em;
   &:hover,
@@ -11,5 +11,8 @@ button {
   {
     color: black;
     background: $clr-primary-lt;
+  }
+  &:not(select) {
+    cursor: pointer;
   }
 }

@@ -6,19 +6,16 @@
 @import
 'abstracts/variables',
 'abstracts/mixins',
+'abstracts/animations',
 
 'base/reset',
 'base/base',
 
+'components/article',
 'components/buttons',
-'components/images',
-'components/links',
+'components/modal-form',
+'components/modal-lightbox',
+'components/profile',
+'components/tags',
 
-'layout/footer',
-'layout/forms',
-'layout/grid',
-'layout/header',
-'layout/menus',
-'layout/nav',
-
-'pages/home';
+'layout/header';

@@ -1,0 +1,34 @@
+article {
+  text-align: center;
+  margin: 2.5em auto;
+  @include for-desktop-up {
+    width: calc(100% / 3);
+  }
+  h2 {
+    color: $clr-primary-lt;
+    font-size: 2.25em; /* 36px */
+  }
+  p {
+    margin: 0.5em;
+  }
+  p:first-child {
+    color: $clr-primary;
+    font-size: 0.8125em; /* 13px */
+  }
+  p:nth-child(2) {
+    color: black;
+    font-size: 0.625em; /* 10px */
+  }
+  p:last-child {
+    color: $clr-secondary;
+    font-size: 0.5625em; /* 9px */
+  }
+  img,
+  video {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1em;
+  }
+}

@@ -1,0 +1,49 @@
+header {
+  z-index: 1;
+  padding: 1em;
+  background: white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  @include for-desktop-up {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  img {
+    width: 150px;
+    @include for-desktop-up {
+      width: 200px;
+    }
+  }
+  div {
+    text-align: center;
+    line-height: 2em;
+    margin: 1em auto;
+    @include for-desktop-up {
+      margin: 0;
+      margin-left: 5%;
+    }
+  }
+  ul {
+    flex-flow: row wrap;
+  }
+  #anchor-nav {
+    color: white;
+    background: $clr-primary;
+    border-radius: 5px;
+    padding: 0 0.5em;
+    font-size: 1.125em; /* 18px */
+    font-weight: 700;
+    cursor: pointer;
+    &:hover,
+    &:focus
+    //active + visited
+    {
+      color: black;
+      background: $clr-primary-lt;
+    }
+  }
+}
