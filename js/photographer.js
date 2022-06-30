@@ -71,7 +71,7 @@ const createProfile = (photographersById) => {
         </div>
       </div>
       <button class="modal-btn btn" title="Contact Me">Contactez-moi</button>
-      <img src="./assets/Photographers_ID_Photos/${portrait}" alt="${name}">
+      <img src="https://claire-lavigne.github.io/ClaireLavigne_6_09122020/assets/Photographers_ID_Photos/${portrait}" alt="${name}">
   `;
 
   sectionOne.innerHTML += content;
