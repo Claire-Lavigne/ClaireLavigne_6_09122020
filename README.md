@@ -1,18 +1,17 @@
 # Project 6 | [FishEye](https://claire-lavigne.github.io/ClaireLavigne_6_09122020/)
 
-A plateform for photographers
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
 
-[![Badge_html](https://img.shields.io/badge/Language-HTML5-blue)](https://img.shields.io)
-[![Badge_scss](https://img.shields.io/badge/Language-SCSS-blue)](https://img.shields.io)
-[![Badge_js](https://img.shields.io/badge/Language-JS-blue)](https://img.shields.io)
+**FishEye** is a freelance photographer platform that focuses on **accessibility**.
 
-:heavy_check_mark: JS events  
-:heavy_check_mark: Accessibility
+✔️ JavaScript events  
+✔️ Accessible website
 
 <img src="https://github.com/Claire-Lavigne/repo-images/blob/main/FishEye.JPG" width="80%">
 
-# Getting started
+## Getting started
 
-- `npm install autoprefixer postcss postcss-cli -g`
 - `npm i`
 - `npm run dev`
