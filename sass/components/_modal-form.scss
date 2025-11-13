@@ -4,15 +4,17 @@
   z-index: 1;
   left: 0;
   top: 0;
+  padding: 1rem;
   width: 100vw;
   height: 100vh;
   background-color: white;
+  overflow: scroll;
   @include for-desktop-up {
     background-color: rgba(0, 0, 0, 0.3);
   }
   //background-color: $clr-secondary-lt;
   &-content {
-    margin: 5% auto;
+    margin: auto;
     width: 100%;
     max-width: 500px;
     animation: modalopen 0.5s;
@@ -34,7 +36,11 @@
     margin: 15px auto;
   }
   #your_message {
-    height: 180px;
+    height: auto;
+    width: 100%;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+    padding: 8px;
   }
   label {
     font-size: 1.0625em; /* 17px */
